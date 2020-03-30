@@ -8,13 +8,13 @@ Kudu: 1.10.0-cdh6.3.2
 
 Run inside it's directory:
 ```shell
-docker build . -t fedormalyshkin/chd6-impala-kudu:6.3.2
+docker build . -t fedormalyshkin/chd6-impala-kudu
 ```
 
 ## Run container
 
 ```shell
-docker run -d -p 8050:8050 -p 8051:8051 -p 21000:21000 -p 21050:21050 -p 25000:25000 -p 25010:25010 -p 25020:25020 -p 50070:50070  -p 50075:50075 --name cdh6-impala-kudu fedormalyshkin/chd6-impala-kudu:6.3.2
+docker run -d -p 8050:8050 -p 8051:8051 -p 21000:21000 -p 21050:21050 -p 25000:25000 -p 25010:25010 -p 25020:25020 -p 50070:50070  -p 50075:50075 --name cdh6-impala-kudu fedormalyshkin/chd6-impala-kudu
 ```
 
 ## Exposed ports
