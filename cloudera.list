@@ -1,0 +1,2 @@
+deb [arch=amd64] https://archive.cloudera.com/cdh6/6.3.2/ubuntu1604/apt/ xenial-cdh6.3.2 contrib
+deb-src https://archive.cloudera.com/cdh6/6.3.2/ubuntu1604/apt/ xenial-cdh6.3.2 contrib
