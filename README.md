@@ -1,8 +1,8 @@
-# Kudu/Impala container from CDH6 stack (6.3.2)
+# Kudu/Impala container from CDH6 stack (6.2.1)
 
 This is a standalone container which has Apache Kudu and Impala installed with dependencies (HDFS, Hive).
-Impala: 3.2.0-cdh6.3.2
-Kudu: 1.10.0-cdh6.3.2
+Impala: 3.2.0-cdh6.2.1
+Kudu: 1.10.0-cdh6.2.1
 
 ## Build container
 
