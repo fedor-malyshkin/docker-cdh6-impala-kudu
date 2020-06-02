@@ -1,12 +1,14 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y curl && apt-get install  -y apt-transport-https ca-certificates
+RUN apt-get update && apt-get install -y curl \
+    && apt-get install  -y apt-transport-https ca-certificates \
+    && apt-get install  -y gnupg
 
 ADD cloudera.list /etc/apt/sources.list.d/
 
-RUN curl -o archive.key https://archive.cloudera.com/cdh6/6.3.2/ubuntu1604/apt/archive.key \
+RUN curl -o archive.key https://archive.cloudera.com/cdh6/6.3.2/ubuntu1804/apt/archive.key \
     && apt-key add archive.key \
     && apt-key update \
     && apt-get update
